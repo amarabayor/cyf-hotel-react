@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import moment from "moment";
+import ButtonShowProfile from "./ButtonShowProfile";
 
 const Tableline = props => {
   const [selected, setSelected] = useState("");
@@ -23,6 +24,12 @@ const Tableline = props => {
       <td>{props.booking.checkInDate}</td>
       <td>{props.booking.checkOutDate}</td>
       <td>{checkOut.diff(checkIn, "days")}</td>
+      <td>
+        <ButtonShowProfile
+          id={props.booking.id}
+          buttonfunction={props.buttonfunction}
+        />
+      </td>
       {/*<td>{booking.checkInDate.diff(booking.checkOutDate, "days")}</td>*/}
     </tr>
   );

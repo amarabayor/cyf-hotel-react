@@ -4,7 +4,7 @@ const Header = () => {
     <div>
       <header className="App-header">CYF Hotel</header>
       <img
-        class="card-img"
+        className="card-img"
         src="https://image.flaticon.com/icons/svg/139/139899.svg"
         alt=""
       />
